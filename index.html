@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,12 @@
     <header>
         <img src="images/LogoMD.PNG" alt="Logo">
         <nav>
-            <li class="link"><a href="#">Home</a></li>
-            <li class="link"><a href="#">Features</a></li>
-            <li class="link"><a href="#">Pricing</a></li>
-            <li class="link"><a href="#About">About</a></li>
+            <li class="link"><a href="#About">OM</a></li>
+            <li class="link"><a href="#tja">TJÄNSTER</a></li>
+            <li class="link"><a href="#arande">KONTAKTA</a></li>
         </nav>
-        <button id="redera1"><a href=""> Contact me <i style="color: #fff;" class="fa-solid fa-square-phone-flip"></i> </a></button>
-        <button id="redera"><a href="tel:070000000"> Contact me <i style="color: #fff;" class="fa-solid fa-square-phone-flip"></i> </a></button>
+        <button id="redera1"><a href="#arande"> Contact me <i style="color: #fff;" class="fa-solid fa-square-phone-flip"></i> </a></button>
+        <button id="redera"><a href="#arande"> Contact me <i style="color: #fff;" class="fa-solid fa-square-phone-flip"></i> </a></button>
 
     </header>
 
@@ -31,18 +30,113 @@
                 Jag briljerar med att designa hemsidor på olika programmeringsspråk.
             </p>
             
-            <button><a>Sicka ärande</a></button>
+            <button><a style="color: #fff; text-decoration: none;" href="#arande">Sicka ärande</a></button>
         </div>
         <div class="sec2">
             <img src="images/header.png">
         </div>
     </section>
 
+<div id="desk" class="desk">
+    
+</div>
 
 
+    <section id="tja" class="tjanster">
+        <div class="denh2"><h2>Tjänster <i class="fa-solid fa-code"></i></h2></div>
+    <div class="tjanster1">
+        <div class="cont">
+            <div class="con1">
+                <div class="icon"><i class="fa-regular fa-window-restore"></i></div>
+                <h4>Hemsidor</h4>
+                <p>Professionella och prisvärda hemsidor till företag och privatpersoner som vill utveckla sin digitala närvaro...</p>
+                <a id="con1">Läs mer <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="cont">
+            <div class="con1">
+                <div class="icon"><i class="fa-solid fa-icons"></i></div>
+                <h4>Logotyp</h4>
+                <p>En välgjord logotyp är viktig för att skapa ett starkt första intryck och ge ditt varumärke en tydlig identitet...</p>
+                <a id="con2" >Läs mer <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="cont">
+            <div class="con1">
+                <div class="icon"><i class="fa-regular fa-window-restore"></i></div>
+                <h4>Webbhosting</h4>
+                <p>För att din hemsida ska fungera på bästa sätt behöver du även webbhosting. Jag hjälper dig att välja rätt... <!--hostinglösning som passar både  din hemsidas behov och din budget--> </p>
+                <a id="con3" >Läs mer <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    </section>
 
 
+    <section id="arande" class="kontakt">
 
+    <div class="forDelen">
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="6c78aaca-18c7-4a05-ae53-09b37119d952">
+        
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <label for="name">Fullständigt namn:</label>
+            <input type="text" name="name" placeholder="Adam Eriksson" required>
+
+            <label for="name">E-postadress:</label>
+            <input type="email" name="email" placeholder="you@gmail.com" required>
+
+            <label for="name">Ditt ärande:</label>
+            <textarea name="message" placeholder="Hej..." required></textarea>
+        
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <!-- Custom Confirmation / Success Page -->
+            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+        
+            <button type="submit">Skicka</button>
+        
+        </form>
+    </div>
+        <div class="andraDelen">
+            <h3>Skicka in ärande <i class="fa-solid fa-paper-plane"></i></h3>
+
+            <p>
+                <br>
+                <a style="color: #1d4ed8 ;">Fyll i Ditt Ärende</a>
+            <br><br>    
+            För att kunna hjälpa dig på bästa sätt, vänligen fyll i formuläret nedan med följande information:
+            <br>
+            <a style="color: #1d4ed8 ;">Fullständigt namn</a> – så att vi vet vem vi har kontakt med. <br>
+            <a style="color: #1d4ed8 ;">E-postadress</a> – för att vi enkelt ska kunna återkoppla till dig. <br>
+            <a style="color: #1d4ed8 ;">Ditt ärende </a> – beskriv kort vad du behöver hjälp med eller vilken typ av hemsida du är intresserad av. <br>
+            När du fyllt i all information, klicka på Skicka in så återkommer vi till dig så snart som möjligt!
+            </p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="social">
+            <a id="face" ><i class="fa-brands fa-square-facebook"></i></a>
+            <a id="insta"><i class="fa-brands fa-square-instagram"></i></a> 
+            <script>
+                document.getElementById("face").addEventListener("click", function(){
+                    window.open("https://www.facebook.com/profile.php?id=61568099139938")
+                });
+                document.getElementById("insta").addEventListener("click", function(){
+                    window.open("https://www.instagram.com/mdweb6/")
+                });
+            </script>
+        </div>
+        <a>Copyright © 2024 MD WEB. All Rights Reserved.</a>
+    </footer>
+
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/6a817012d4.js" crossorigin="anonymous"></script>
 </body>
 </html>
