@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --main--color:#18181B;
@@ -151,15 +152,237 @@ header button a{
     max-width: 600px;
     margin: auto;
 }
+.desk{
+    width: 100%;
+    height: 100%;
+    background-color: var(--main--color);
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.deskcon{
+    width: 500px;
+}
+.ic{
+    color: var(--text--color);
+    background-color: #0049AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+}
+.deskcon i{
+    color: var(--text--color);
+}
+.deskcon h4{
+    color: var(--text--color);
+    margin-top: 20px;
+}
+.deskcon p{
+    color: var(--text--color);
+    margin-top: 10px;
+}
+.btns{
+    margin-top: 10px;
+}
+.kons{
+    background-color: var(--to--color);
+    color: var(--text--color);
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.stas{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.tjanster{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.tjanster1{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 30px;
+}
+.tjanster h2{
+    color: var(--text--color);
+}
+.con1{
+    display: flex;
+    justify-content: left;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #27272A;
+    width: 290px;
+    height: 267px;
+    padding-left: 20px;
+    gap: 10px;
+    border-radius: 10px;
+}
+.con1:hover{
+    background-color: #333336;
+    border: 2px solid #fff;
+    transition: 1s;
+}
+.con1 .icon{
+    color: var(--text--color);
+    background-color: #0049AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+}
+.con1 h4{
+    color: var(--text--color);
+}
+.con1 p{
+    color: #eee;
+}
+.con1 a{
+    color: var(--text--color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.con1 a:hover{
+    color: var(--to--color);
+    transition: 1s;
+}
+.kontakt{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #27272A ;
+    margin-top: 70px;
+}
+.forDelen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.forDelen form{
+    display: flex;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+.forDelen form label{
+    color: var(--text--color);
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.forDelen form input{
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+.forDelen form textarea{
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    width: 400px;
+    height: 155px;
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+.forDelen form button{
+    font-size: 1rem;
+    height: 50px;
+    width:410px;
+    background-color: var(--to--color);
+    border: none;
+    color: var(--text--color);
+    margin-top: 20px;
+}
+
+.andraDelen{
+    width: 40%;
+    height: 100%;
+}
+.andraDelen h3{
+    color: var(--text--color);
+    margin-top: 60px;
+}
+.andraDelen p{
+    color: var(--text--color);
+    margin-top: 10px;
+}
 
 
-
-
-
-
-
-
-
+footer{
+    background-color: #121214;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.social a{
+    color: #eee;
+    border: 1px solid #eee;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+.social a:hover{
+    background-color: #0049AB;
+    border: 1px solid #013d8c;
+    transition: 1s;
+}
+footer a{
+    color: var(--text--color);
+    
+}
 
 
 
@@ -217,5 +440,154 @@ header button a{
     .sec2 img{
         max-width: 300px;
         margin: auto;
+    }
+    .desk{
+        width: 100%;
+        height: 100%;
+        background-color: var(--main--color);
+        position: fixed;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .deskcon{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ic{
+        color: var(--text--color);
+        background-color: #0049AB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        width: 46px;
+        height: 46px;
+        border-radius: 10px;
+    }
+    .deskcon i{
+        color: var(--text--color);
+    }
+    .deskcon h4{
+        color: var(--text--color);
+        margin-top: 20px;
+    }
+    .deskcon p{
+        color: var(--text--color);
+        margin-top: 10px;
+        width: 350px;
+    }
+    
+    .tjanster{
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .denh2{
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btns{
+        margin-top: 10px;
+        width: 90%;
+    }
+    .tjanster1{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 30px;
+    }
+    .kontakt{
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        background-color: #27272A ;
+        margin-top: 70px;
+    }
+    .forDelen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .forDelen form{
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+    }
+    .forDelen form label{
+        color: var(--text--color);
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .forDelen form input{
+        background-color: #fff;
+        border: none;
+        border-radius: 2px;
+        width: 300px;
+        height: 40px;
+        padding-left: 10px;
+        outline: none;
+        font-size: 1rem;
+    }
+    .forDelen form textarea{
+        background-color: #fff;
+        border: none;
+        border-radius: 2px;
+        width: 300px;
+        height: 155px;
+        padding-left: 10px;
+        padding-top: 10px;
+        outline: none;
+        font-size: 1rem;
+    }
+    .forDelen form button{
+        font-size: 1rem;
+        height: 50px;
+        width:310px;
+        background-color: var(--to--color);
+        border: none;
+        color: var(--text--color);
+        margin-top: 20px;
+    }
+
+    .andraDelen{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .andraDelen h3{
+        color: var(--text--color);
+        margin-top: 60px;
+        width: 100%;
+        padding-left: 90px;
+    }
+    .andraDelen p{
+        color: var(--text--color);
+        margin-top: 10px;
+        width: 300px;
     }
 }
